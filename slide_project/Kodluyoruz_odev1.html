@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <style>
+        #text{
+            font-style: bold;
+            text-align: center;
+        }
+        #time{
+         align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var kullanicİsmi = prompt("Adınızı Giriniz.");
+        if (kullanicİsmi != NULL){
+            console.log("Merhaba " + kullanicİsmi + " ! Hoş Geldin !");
+        }
+        else {
+            console.log("Hatalı Girdiniz")
+        }
+        function tarihSaat(){
+            var date = new Date().toLocaleString('tr-TR');
+            document.querySelector("Datetime").innerHTML = date;
+        }
+    </script>
+    <div id="Datetime" class="time">
+
+    </div>
+    <div class="text">
+        tarihinde
+        <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
+        Javascript bölümü 1. Ödevindesiniz. 
+    </div>
+</body>
+</html>
